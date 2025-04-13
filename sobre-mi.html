@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/login.js" defer></script>
+    <script src="assets/js/acordeon.js" defer></script>
+    <script src="assets/js/themes.js" defer></script>
+    <title>Sobre Mi</title>
+  </head>
+  <body>
+    <div class="layout">
+      <header id="header" class="layout_header">
+        <h1 class="header_logo logo_text">PROYECTO JS</h1>
+        <nav class="header_nav">
+          <ul class="nav_list">
+            <li class="list_item">
+              <a href="index.html" class="list_link">INICIO</a>
+            </li>
+            <li class="list_item">
+              <a href="reloj.html" class="list_link">RELOJ</a>
+            </li>
+            <li class="list_item">
+              <a href="sobre-mi.html" class="list_link">SOBRE MI</a>
+            </li>
+            <li class="list_item">
+              <a href="contacto.html" class="list_link">CONTACTO</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="layout_main">
+        <h2 class="main_title">Sobre Mi</h2>
+        <div class="main_acordeon">
+          <article class="acordeon_collapse">
+            <header class="collapse_header">
+              <i class="fa-solid fa-chevron-down"></i>
+              <i class="fa-solid fa-chevron-up"></i>
+              <p class="collapse_title">¿Quienes somos?</p>
+            </header>
+            <div class="collapse_body">
+              <p class="collapse_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium a quos laudantium. Tempora accusamus ipsa excepturi
+                molestias maiores consectetur. Illo iure, facere saepe fugiat
+                quos natus. Nostrum minima nisi perferendis!
+              </p>
+            </div>
+          </article>
+          <article class="acordeon_collapse">
+            <header class="collapse_header">
+              <i class="fa-solid fa-chevron-down"></i>
+              <i class="fa-solid fa-chevron-up"></i>
+              <p class="collapse_title">Nuestros servicios</p>
+            </header>
+            <div class="collapse_body">
+              <p class="collapse_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium a quos laudantium. Tempora accusamus ipsa excepturi
+                molestias maiores consectetur. Illo iure, facere saepe fugiat
+                quos natus. Nostrum minima nisi perferendis!
+              </p>
+            </div>
+          </article>
+          <article class="acordeon_collapse">
+            <header class="collapse_header">
+              <i class="fa-solid fa-chevron-down"></i>
+              <i class="fa-solid fa-chevron-up"></i>
+              <p class="collapse_title">¿Que dicen nuestros clientes?</p>
+            </header>
+            <div class="collapse_body">
+              <p class="collapse_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium a quos laudantium. Tempora accusamus ipsa excepturi
+                molestias maiores consectetur. Illo iure, facere saepe fugiat
+                quos natus. Nostrum minima nisi perferendis!
+              </p>
+            </div>
+          </article>
+        </div>
+      </main>
+
+      <aside class="layout_aside">
+        <header class="aside_header">
+          <div class="header_container-title">
+            <h3 class="header_title">
+              <span class="title_span">¿Quien soy?</span>
+            </h3>
+          </div>
+          <div class="header_container-img">
+            <img
+              class="header_img"
+              src="assets/img/caracol.jpg"
+              alt="caracol"
+            />
+          </div>
+          <p class="header_description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+            ipsum corrupti quam, tempore molestias provident voluptatum
+            nesciunt, quis rerum itaque reprehenderit qui velit consequuntur,
+            recusandae placeat cum nemo reiciendis dolore!
+          </p>
+        </header>
+        <div class="login_container-title">
+          <h3 class="login_title">
+            <span class="title_span">Identificate</span>
+          </h3>
+        </div>
+        <form class="aside_login" action="">
+          <div class="login_form-group">
+            <label for="name" class="login_label">Nombre:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="login_input"
+              required
+            />
+          </div>
+          <div class="login_form-group">
+            <label for="email" class="login_label">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="login_input"
+              required
+            />
+          </div>
+          <div class="login_form-group">
+            <label for="pass" class="login_label">Contraseña:</label>
+            <input
+              type="password"
+              id="pass"
+              name="pass"
+              class="login_input"
+              autocomplete="cc-number"
+              required
+            />
+          </div>
+          <input type="submit" value="Login" class="login_submit" />
+        </form>
+        <div class="aside_data aside_data-hide">
+          <p class="data_text">Bienvenido, <span class="data_name"></span></p>
+          <button class="data_logout">Log Out</button>
+        </div>
+      </aside>
+    </div>
+    <footer class="footer">
+      <p class="footer_text">
+        Todos los derechos reservados a Daniel Miguel Fernández &copy;
+      </p>
+      <p class="footer_top">Ir hacia arriba</p>
+    </footer>
+    <div class="themes">
+      <input type="button" class="theme_green" />
+      <input type="button" class="theme_blue" />
+      <input type="button" class="theme_red" />
+    </div>
+  </body>
+</html>
